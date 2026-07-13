@@ -1,2 +1,2 @@
 # cloud-native-collab-editor
-A horizontally scalable, cloud native real time collaboration engine utilizing WebSockets, Redis for distributed state, and CRDTs for document synchronization, orchestrated via Kubernetes.
+A horizontally scalable, cloud-native real-time collaboration engine utilizing WebSockets, Redis for distributed state, and CRDTs for document synchronization, orchestrated via Kubernetes.
