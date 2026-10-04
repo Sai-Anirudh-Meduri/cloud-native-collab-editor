@@ -5,20 +5,41 @@
   "type": "module",
   "scripts": {
     "dev": "vite --config config/vite.config.ts",
+    "dev:server": "tsx server/index.ts",
     "build": "tsc -b && vite build --config config/vite.config.ts",
     "lint": "oxlint .",
-    "preview": "vite preview --config config/vite.config.ts"
+    "preview": "vite preview --config config/vite.config.ts",
+    "migrate": "node-pg-migrate"
   },
   "dependencies": {
+    "@tiptap/extensions": "^3.31.4",
+    "@tiptap/pm": "^3.31.4",
+    "@tiptap/react": "^3.31.4",
+    "@tiptap/starter-kit": "^3.31.4",
+    "bcrypt": "^6.0.0",
+    "better-auth": "^1.7.7",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.5",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "pg": "^8.23.1",
     "react": "^19.2.7",
-    "react-dom": "^19.2.7"
+    "react-dom": "^19.2.7",
+    "react-router": "^7.18.4"
   },
   "devDependencies": {
+    "@types/bcrypt": "^6.0.0",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/jsonwebtoken": "^9.0.10",
     "@types/node": "^24.13.2",
+    "@types/pg": "^8.23.1",
     "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.3",
+    "node-pg-migrate": "^9.0.0",
     "oxlint": "^1.71.0",
+    "tsx": "^4.23.15",
     "typescript": "~6.0.2",
     "vite": "^8.1.1"
   }
